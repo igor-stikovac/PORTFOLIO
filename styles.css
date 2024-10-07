@@ -1,0 +1,172 @@
+p, a {
+    font-family: "Space mono", monospace;
+}
+
+
+/* CLASSES */
+
+.title {
+    font-family: "Dancing Script", cursive;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.git {
+    background-color: #ff8c00;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.git:hover {
+    background-color: #ff8c00;
+}
+
+.mail {
+    background-color: #007AFF;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.mail:hover{
+    background-color: #007AFF;
+}
+
+
+.lead {
+    font-family: "Space mono", monospace;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.tech-icon {
+    font-size: 500%;
+    transition: transform 0.5s ease; /* tranzicija za glatko zumiranje */
+}
+
+.tech-icon:hover {
+    transform: scale(1.4); /* faktor zumiranja, npr. 1.2 znači 20% veće */
+}
+
+
+/* Global Styles for Light Mode */
+#main {
+    background-image: url(PICTURES/day.jpg); /* Replace with your image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeating */
+    background-attachment: fixed; /* Fixed background while scrolling */
+    color: #000000; /* Text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+#about, #projects {
+    background-color: #EDF9FC;
+    border-color: white;
+    border-width: 10px 0px;
+}
+
+#about p {
+    font-size: 1.2rem;
+}
+
+#skills, #links {
+    background-image: url(PICTURES/day.jpg); /* Replace with your image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeating */
+    background-attachment: fixed; /* Fixed background while scrolling */
+}
+
+#skills h2, #links h2 {
+    font-size: 3rem;
+}
+
+
+/* Content styling */
+/* Button for Dark/Light Mode Toggle */
+.theme-toggle-btn {
+    outline: none; /* No outline */
+    position: absolute; /* Fixed in viewport */
+    top: 25px; /* Top spacing */
+    right: 25px; /* Right spacing */
+    z-index: 100; /* Ensure it's on top */
+    display: flex; /* Flexbox centering */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    padding: 10px; /* Padding around icon */
+    border-radius: 30%; /* Make the button circular */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Dark Mode Styles */
+.dark-mode #main,.dark-mode #skills,.dark-mode #links{
+    background-image: url(PICTURES/night.jpeg); /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+.dark-mode #about, .dark-mode #projects {
+    background-color: #0B192C;
+    color: white;
+}
+
+/* Button appearance in dark mode */
+.dark-mode .theme-toggle-btn {
+    background-color: #ffffff; /* White background for sun icon */
+    color: #000000; /* Black sun icon */
+}
+
+.dark-mode .gradient-text {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #FFEEAF, #A5F1E9); /* Gradient boje */
+    -webkit-background-clip: text; /* Za Safari */
+    -webkit-text-fill-color: transparent; /* Prozirna boja teksta */
+}
+/* Hover effect for the button */
+.theme-toggle-btn:hover {
+    opacity: 0.8; /* Slight opacity change on hover */
+}
+
+/* Icon styling */
+.theme-toggle-btn i {
+    font-size: 20px; /* Ensure icon size */
+}
+
+.gradient-text {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #001F3F, #D61C4E); /* Gradient boje */
+    -webkit-background-clip: text; /* Za Safari */
+    -webkit-text-fill-color: transparent; /* Prozirna boja teksta */
+}
+
+.icon-hover {
+    transition: color 0.3s ease; /* Dodaj prelaz za glatkiji efekt */
+}
+
+.icon-hover:hover {
+    color: red; /* Boja kada prevučeš mišem */
+}
+
+
+.dark-mode #links i {
+    color: white;
+}
+
+#about h2, #skills h2, #links h2, #projects h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+.button-key {
+    background-color: #EDF9FC;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid #b0b0b0;
+    box-shadow: 0px 4px 0px #999, 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+  
